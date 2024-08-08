@@ -67,9 +67,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
           //   console.log(`${base_url}${movie.poster_path}`);
         ))}
       </div>
-      {trailerUrl && (
-        <YouTube videoId={trailerUrl} opts={opts} id="youtube_video" />
-      )}
+      {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
     </div>
   );
 }
